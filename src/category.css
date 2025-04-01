@@ -1,0 +1,68 @@
+.Cat-section {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.Cat-section .cat-title{
+    margin-left: 78px;
+    color: #333;
+}
+
+.cat-title img{
+    width: 15px;
+    height: 15px;
+}
+  
+.Cat-grid {
+    display: flex;
+    flex-wrap: wrap; /* Makes it responsive */
+    justify-content: center;
+    gap: 20px; /* Adds spacing between boxes */
+    margin-top: 5px;
+}
+
+.Cat-grid .Cat-box {
+    width: 10rem;
+    height: 10rem; /* Increased height to fit text */
+    display: flex;
+    flex-direction: column; /* Puts image on top, text at bottom */
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px; /* Softer edges */
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1), 0px 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.Cat-box:hover{
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
+.Cat-box img {
+    height: 70px;
+    max-width: 80%; /* Ensures the image is responsive */
+}
+
+.Cat-box p {
+    margin-top: 10px; /* Adds space between image and text */
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+   
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .Cat-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        gap: 15px; /* Adjust spacing */
+        justify-content: center;
+    }
+
+    .Cat-box {
+        width: 100%; /* Takes full width of grid column */
+    }
+}
