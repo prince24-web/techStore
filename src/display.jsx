@@ -2,7 +2,7 @@ import "./display.css"
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import apple from "./assets/beat.png"
+import apple from "./assets/Beats_Studio_Pro_x_Kim_Kardashian-removebg-preview.png"
 
 
 const LandingSection = () => {
