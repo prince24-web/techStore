@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./navbar.css";
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   useEffect(() => {
@@ -14,13 +16,12 @@ const Navbar = () => {
       <h2 data-aos="fade-right">eTrade</h2>
       {/* Middle - Navigation Links */}
       <ul className="nav-links" data-aos="fade-left">
-        <li>Home</li>
-        <li>Shop</li>
-        <li>Pages</li>
-        <li>About</li>
-        <li>Blog</li>
-        <li>Contact</li>
-      </ul>
+  <li><Link className="Route-link" to="/">Home</Link></li>
+  <li><Link  className="Route-link" to="/shop">Shop</Link></li>
+  <li><Link  className="Route-link" to="/about">About</Link></li>
+  <li><Link  className="Route-link" to="/contact">Contact</Link></li>
+</ul>
+
     </nav>
   );
 };
